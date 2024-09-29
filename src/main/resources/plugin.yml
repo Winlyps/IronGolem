@@ -8,3 +8,7 @@ commands:
   irongolem:
     description: Gives the player a special egg to summon an Iron Golem.
     usage: /irongolem
+permissions:
+  irongolem.use:
+    description: Allows the player to use the /irongolem command to get an Iron Golem summon egg.
+    default: op

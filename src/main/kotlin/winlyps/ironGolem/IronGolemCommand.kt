@@ -18,6 +18,12 @@ class IronGolemCommand(private val plugin: IronGolem) : CommandExecutor {
 
         val player = sender
 
+        // Check if the player has the required permission
+        if (!player.hasPermission("irongolem.use")) {
+            player.sendMessage("You do not have permission to use this command.")
+            return true
+        }
+
         // Create the special egg (Elder Guardian spawn egg)
         val ironGolemEgg = ItemStack(Material.ELDER_GUARDIAN_SPAWN_EGG)
         val meta = ironGolemEgg.itemMeta
