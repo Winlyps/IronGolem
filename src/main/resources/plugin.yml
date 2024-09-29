@@ -1,7 +1,7 @@
 name: IronGolem
 version: '1.0-SNAPSHOT'
 main: winlyps.ironGolem.IronGolem
-api-version: '1.20'
+api-version: '1.16'
 authors: [ Winlyps ]
 description: A plugin that provides a special egg to summon Iron Golems.
 commands:
